@@ -1,7 +1,11 @@
-# Evaline Consilium
+# evaline-consilium
+**Evaline Consilium — multi-agent deliberation layer.**
 
-Multi-agent deliberation & consensus layer for the Nova Line Network.
+## Contents
+- `src/core/` — ConsiliumEngine, CorporateRoles, SubagentEngine, AgentBuilder, RoomManager, SephirotEngine (TypeScript)
+- `backend/app/` — consilium.py, corporate_roles.py (Python mirror)
 
-Planned: a coordination layer where the 10 LLM agents reach joint decisions (consensus engine), arbitration rules, and cross-agent deliberation protocols.
+## Agents
+God (Supreme Controller) · Adam (Backend/Production/Security/Business) · Eva (Frontend/Face of Company) + 15 corporate roles.
 
-**Status:** placeholder — repository initialized, content pending.
+Modes: solo, broadcast, dialogue, consilium.
