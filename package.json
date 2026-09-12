@@ -1,0 +1,34 @@
+{
+  "name": "evaline-consilium",
+  "version": "0.1.0",
+  "description": "EvaLine Agent Consilium — modular multi-LLM deliberation engine (solo, broadcast, dialogue, interview, consilium) with pluggable LLM clients, roles and pricing.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "consilium",
+    "multi-agent",
+    "llm",
+    "deliberation",
+    "evaline"
+  ],
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=18"
+  }
+}
